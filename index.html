@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *{
+      font-family: 'Roboto', sans-serif;
+    }
+    #navbar>div>button{
+      margin-top: 30px;
+      height: 25px;
+      border-radius: 5px;
+      border: 0px;
+
+    }
+
+    #navbar>div>button:hover{
+      color: white;
+      background-color: rgb(196, 81, 241);
+    }
+    h2{
+      text-align: center;
+    }
+    form{
+      width: 20%;
+      margin: auto;
+      padding-top: 40px;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+
+    form>input{
+      margin-left:18%;
+      border-radius: 5px;
+      border: 0.1px solid;
+      height: 25px;
+    }
+
+    #add_product{
+      height: 25px;
+      border-radius: 5px;
+      border: 0px;
+      margin-bottom: 20px;
+      margin-right: 20px;
+    }
+
+    #add_product:hover{
+      color: white;
+      background-color: rgb(196, 81, 241);
+    }
+
+    #showproduct{
+      margin-left: 46%;
+
+    }
+  </style>
+  <body>
+    <div id="navbar">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+      <div><Button id="showproduct">Show Products</Button></div>
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+      <form>
+        <input type="text" placeholder="Type" id="type">
+        <br><br>
+        <input type="text" placeholder="Description" id="desc">
+        <br><br>
+        <input type="number" placeholder="Price" id="price">
+        <br><br>
+        <input type="text" placeholder="Image Url" id="image">
+        <br><br>
+        <input type="submit" value="Add Products" id="add_product">
+      </form>
+
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>

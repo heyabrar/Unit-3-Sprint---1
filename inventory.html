@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Inventory</title>
+  </head>
+
+  <style>
+    *{
+      font-family: 'Roboto', sans-serif;
+    }
+     #all_products{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: auto;
+       row-gap: 50px;
+       width: 90%;
+       margin: auto;
+       margin-top: 30px;
+     }
+     .box{
+       height: auto;
+       width: 70%;
+       margin: auto;
+       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+       padding-bottom: 20px;
+       border-radius: 10px;
+     }
+
+     .type{
+       margin-left: 20px;
+     }
+
+     .desc{
+      margin-left: 20px;
+    }
+
+    .price{
+      margin-left: 20px;
+    }
+
+    .removeButton{
+      margin-left: 20px;
+      border: 0px;
+      border-radius: 5px;
+      height: 20px;
+    }
+
+    .removeButton:hover{
+      color: white;
+      background-color: red;
+    }
+
+    .image{
+      height: 150px;
+      width: 150px;
+      margin-left: 55px;
+      padding-top: 20px;
+    }
+
+    #navbar>div>button{
+      margin-top: 30px;
+      height: 25px;
+      border-radius: 5px;
+      border: 0px;
+    }
+
+    #navbar>div>button:hover{
+      color: white;
+      background-color: rgb(196, 81, 241);
+    }
+  </style>
+
+  <body>
+    <div id="navbar">
+      <!--Create Add More Product button here, give id as "add_more_product". avoid making spelling mistakes in HTML id's-->
+      <div><button>Add More Product</button></div>
+    </div>
+    <div id="all_products">
+      <!--append all products data here in grid format-->
+      <!-- The Remove Product button will have id as "remove_product" -->
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/inventory.js"></script>
